@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 1rem 1.6rem;
+    width: 100vw;
+    height: 100vh;
+    
+    display: grid;
+    grid-template-areas: 
+        "header header header header"
+        "divide divide divide aside"
+        "main main main aside"
+        "main main main aside"
+        "footer footer footer footer"
+    ;
+    gap: 10px;
+}
+
+header {
+    grid-area: header;
+    background-color: violet;
+}
+
+.small-box-1 {
+    grid-area: divide;
+    background-color: coral;
+}
+
+aside {
+    grid-area: aside;
+    background-color: purple;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(128, 0, 45);
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(0, 128, 68);
+}
